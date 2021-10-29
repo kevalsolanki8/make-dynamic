@@ -11,9 +11,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    const model = this.dynamic.createModelForName('keval.contacts');
-    console.log(model);
-
     return this.appService.getHello();
   }
 }

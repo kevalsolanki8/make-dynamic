@@ -9,7 +9,8 @@ export class DynamicService {
 
   createModelForName(name) {
     // if (!(name in establishedModels)) {
-    var Any = new mongoose.Schema({ any: mongoose.Schema.Types.Mixed });
+    const Any = new mongoose.Schema({ name: String });
+
     return mongoose.model(name, Any);
     // }
   }
